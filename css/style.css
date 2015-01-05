@@ -35,3 +35,19 @@ ol, ul {
 }
 /* End Reset */
 
+/* using "box-sizing: border-box;" (below) from css-tricks: 
+Now when we set a width, that element stays 
+that width, despite padding or borders being applied.*/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* end box-sizing: border-box; */
+
+
+.gridMain {
+	max-width: 1024px;
+	margin: 0, auto;
+}
