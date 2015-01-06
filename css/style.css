@@ -47,7 +47,17 @@ that width, despite padding or borders being applied.*/
 /* end box-sizing: border-box; */
 
 
+h1 {font-family: 'Miniver', cursive;
+}
+
 .gridMain {
 	max-width: 1024px;
 	margin: 0, auto;
 }
+
+header {
+
+}
+
+
+
