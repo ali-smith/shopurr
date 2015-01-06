@@ -105,8 +105,7 @@ that width, despite padding or borders being applied.*/
 }
 
 .list-top {
-
-	background: url("css/images/paperTop450x430trans.png");
+	background: url("///Users/Alison/Documents/school/thinkful/sites/shoppingList/shopurr/css/images/paperTop450x430trans.png");
 	background-repeat: repeat;
 	width: 450px;
 	min-height: 430px;
@@ -116,7 +115,7 @@ that width, despite padding or borders being applied.*/
 }
 .list-bottom {
 	
-	background: url("css/images/paperBottom450x170trans.png");
+	background: url("///Users/Alison/Documents/school/thinkful/sites/shoppingList/shopurr/css/images/paperBottom450x170trans.png");
 	background-repeat: no-repeat;
 
 	width: 450px;
@@ -125,6 +124,7 @@ that width, despite padding or borders being applied.*/
 }
 
 .list-top h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif; 
 	text-align: center;
 	font-size: 2em;
 	padding-top: .5em;
@@ -136,6 +136,18 @@ that width, despite padding or borders being applied.*/
 	line-height: 1.5;
 }
 
+input {
+	width: 350px;
+	height: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Pompiere', cursive; 
+	font-size: .75em;
+	padding: 0 1em 0 1em;
+	color: #7a7a7a;
+	/*background-color: transparent;
+	border-style: none;
+}*/
 
 /*end list*/
 
