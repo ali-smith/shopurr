@@ -106,7 +106,7 @@ that width, despite padding or borders being applied.*/
 
 .list-top {
 
-	background: url("///Users/Alison/Documents/school/thinkful/sites/shoppingList/shopurr/css/images/paperTop450x430trans.png");
+	background: url("/css/images/paperTop450x430trans.png");
 	background-repeat: repeat;
 	width: 450px;
 	min-height: 430px;
@@ -116,7 +116,7 @@ that width, despite padding or borders being applied.*/
 }
 .list-bottom {
 	
-	background: url("///Users/Alison/Documents/school/thinkful/sites/shoppingList/shopurr/css/images/paperBottom450x170trans.png");
+	background: url("/css/images/paperBottom450x170trans.png");
 	background-repeat: no-repeat;
 
 	width: 450px;
