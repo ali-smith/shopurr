@@ -47,8 +47,9 @@ that width, despite padding or borders being applied.*/
 /* end box-sizing: border-box; */
 
 
-h1 {
+body {
 	font-family: 'Miniver', cursive;
+	color: #7F4E1F;
 }
 
 .gridMain {
