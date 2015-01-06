@@ -47,7 +47,8 @@ that width, despite padding or borders being applied.*/
 /* end box-sizing: border-box; */
 
 
-h1 {font-family: 'Miniver', cursive;
+h1 {
+	font-family: 'Miniver', cursive;
 }
 
 .gridMain {
@@ -56,7 +57,7 @@ h1 {font-family: 'Miniver', cursive;
 }
 
 header {
-
+	font-family: 'Miniver', cursive;
 }
 
 
