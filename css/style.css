@@ -108,6 +108,10 @@ that width, despite padding or borders being applied.*/
 	box-shadow: -5px -6px 6px 1px #999999;
 }
 
+.uncheckedList, .checkedList {
+	float: left;
+}
+
 .list-top {
 	background: url("../images/paperTop450x430trans.png");
 	background-repeat: repeat;
@@ -136,6 +140,7 @@ that width, despite padding or borders being applied.*/
 .list-top ul {
 	margin-left: 2em;
 	font-size: 2em;
+	float: left;
 }
 
 .addItem {
