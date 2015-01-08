@@ -7,5 +7,9 @@ $('input').keydown(function(e) {
   }
   });
 
+$('input').click(function() {
+	$(this).removeAttr('placeholder');
+});
+
 
 });//document ready
