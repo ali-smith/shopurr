@@ -182,7 +182,10 @@ that width, despite padding or borders being applied.*/
 	border: 1px solid black;
 }
 
-
+.checkedList .li-box{
+	border: 1px solid gray;
+	color: gray; 
+}
 
 /*end list*/
 
