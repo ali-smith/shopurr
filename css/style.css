@@ -71,7 +71,7 @@ that width, despite padding or borders being applied.*/
 
 /*grid*/
 [class*='col-'] {
-  float: left;
+  
 }
 
 .col-1-3 {
@@ -108,16 +108,13 @@ that width, despite padding or borders being applied.*/
 	box-shadow: -5px -6px 6px 1px #999999;
 }
 
-.uncheckedList, .checkedList {
-	float: left;
-}
 
 .list-top {
 	background: url("../images/paperTop450x430trans.png");
 	background-repeat: repeat;
 	width: 450px;
 	min-height: 430px;
-	float: left;
+	
 
 	
 }
@@ -126,7 +123,7 @@ that width, despite padding or borders being applied.*/
 	background-repeat: no-repeat;
 	width: 450px;
 	height: 170px;
-	float: left;
+	
 }
 
 .list-top h1 { 
@@ -140,7 +137,7 @@ that width, despite padding or borders being applied.*/
 .list-top ul {
 	margin-left: 2em;
 	font-size: 2em;
-	float: left;
+	
 }
 
 .addItem {
@@ -149,6 +146,8 @@ that width, despite padding or borders being applied.*/
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: .8em;
 	color: #000000;
+	margin: 0 auto;
+	display: block;
 }
 
 ::-webkit-input-placeholder {
@@ -177,8 +176,7 @@ that width, despite padding or borders being applied.*/
 .li-box {
 	height: 30px;
 	width: 300px;
-	float: left;
-	margin: .5em 0 0 0;
+	margin: .5em auto 0;
 	border: 1px solid black;
 }
 
