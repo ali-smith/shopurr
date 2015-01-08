@@ -50,6 +50,8 @@ that width, despite padding or borders being applied.*/
 }
 /* end box-sizing: border-box; */
 
+
+
 .container {
 	width: 800px;
 	padding-top: 50px;
@@ -129,54 +131,54 @@ that width, despite padding or borders being applied.*/
 	font-weight: 700;
 	padding-top: .5em;
 	padding-bottom: .25em;
-	
-
 }
 
 .list-top ul {
-	margin-left: 1.5em;
+	margin-left: 2em;
 	font-size: 2em;
-	line-height: 1.5;
-}
-
-.textField{
-	width: 300px;
-	height: 30px;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	letter-spacing: .025em;
-	font-weight: 400;
-	font-size: .8em;
-	padding: 0 1em 0 .5em;
-	color: #000000;
-	float: left;
-	/*background-color: transparent;*/
-	border-style: none;
-
-}
- .checkBox {
- 	width: 30px;
- 	height: 30px;
- 	float: left;
- 	margin: auto 0 auto 0;
- 	border:	none;
- 	background-color: white;
-
- }
-
-.li-box-field {
-	height: 30px;
-	float: left;
-	margin: .5em 0 0 0;
-	/*border: 1px solid black;*/
-	
-
 }
 
 .addItem {
 	width: 300px;
 	height: 30px;
-	margin-left: 30px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: .8em;
+	color: #000000;
 }
+
+::-webkit-input-placeholder {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #000000;
+  font-size: .8em;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #000000;
+  font-size: .8em;
+}
+:-ms-input-placeholder {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #000000;
+  font-size: .8em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #000000;
+  font-size: .8em;
+}
+
+
+.li-box {
+	height: 30px;
+	width: 300px;
+	float: left;
+	margin: .5em 0 0 0;
+	border: 1px solid black;
+}
+
+
+
 /*end list*/
 
 
