@@ -71,7 +71,7 @@ that width, despite padding or borders being applied.*/
 
 /*grid*/
 [class*='col-'] {
-  
+  float: left;
 }
 
 .col-1-3 {
@@ -108,6 +108,9 @@ that width, despite padding or borders being applied.*/
 	box-shadow: -5px -6px 6px 1px #999999;
 }
 
+.uncheckedList, .checkedList {
+	
+}
 
 .list-top {
 	background: url("../images/paperTop450x430trans.png");
@@ -176,7 +179,8 @@ that width, despite padding or borders being applied.*/
 .li-box {
 	height: 30px;
 	width: 300px;
-	margin: .5em auto 0;
+	
+	margin: .5em 0 0 0;
 	border: 1px solid black;
 }
 
