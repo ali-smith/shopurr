@@ -108,10 +108,6 @@ that width, despite padding or borders being applied.*/
 	box-shadow: -5px -6px 6px 1px #999999;
 }
 
-.uncheckedList, .checkedList {
-	
-}
-
 .list-top {
 	background: url("../images/paperTop450x430trans.png");
 	background-repeat: repeat;
@@ -135,7 +131,7 @@ that width, despite padding or borders being applied.*/
 	padding-bottom: .25em;
 }
 
-.list-top ul {
+ul {
 	font-size: 2em;
 	
 }
@@ -144,7 +140,7 @@ that width, despite padding or borders being applied.*/
 	width: 300px;
 	height: 30px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: .8em;
+	font-size: 1.5em;
 	color: #000000;
 	margin: 0 auto;
 	display: block;
@@ -154,6 +150,7 @@ that width, despite padding or borders being applied.*/
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #000000;
   font-size: .8em;
+  vertical-align: baseline;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
@@ -172,6 +169,8 @@ that width, despite padding or borders being applied.*/
   font-size: .8em;
 }
 
+/*input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }*/
 
 .li-box {
 	height: 30px;
@@ -180,14 +179,13 @@ that width, despite padding or borders being applied.*/
 	border: 1px solid black;
 }
 
-.checkedList .li-box{
-	border: 1px solid gray;
-	color: gray; 
-}
-
 .li-box input {
 	vertical-align: middle;
-	
+	}
+
+input[type="checkbox"]:checked {
+	border: 1px solid gray;
+	color: gray;
 }
 
 /*end list*/
