@@ -150,7 +150,7 @@ ul {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #000000;
   font-size: .8em;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
@@ -172,20 +172,24 @@ ul {
 /*input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }*/
 
-.li-box {
+.li-box-unchecked {
 	height: 30px;
 	width: 300px;
 	margin: .5em auto 0;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
-.li-box input {
-	vertical-align: middle;
-	}
+.li-box-checked {
+	height: 30px;
+	width: 300px;
+	margin: .5em auto 0;
+	/*border: 1px solid #824338;*/
+	color: #824338;
+}
 
 input[type="checkbox"]:checked {
-	border: 1px solid gray;
-	color: gray;
+	border: 1px solid #824338;
+	color: #824338;
 }
 
 /*end list*/
