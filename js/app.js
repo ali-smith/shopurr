@@ -2,18 +2,15 @@ $(document).ready (function() {
 ///
 
 // $("input[type='text']").on('keyup',function(e) {
-//   	if(e.keyCode==13) {
+//   	if(e.keyCode==13 && newItem > 0) {
 //   		var newItem = $(this).val();
-//   	if (value>='1') {	 
 //   		 $('.listItems-unchecked').prepend('<li class="li-box-unchecked"><input type="checkbox"/>' + newItem + '</li>');
 //   		 $(this).val('');
 //   		}
 
-//   	else{ event.preventDefault();
-
+//   	else{ //do nothing
 // 		} 	 	
 
-//   }		
 //   });
 
 //1/

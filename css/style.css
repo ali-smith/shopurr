@@ -89,7 +89,7 @@ that width, despite padding or borders being applied.*/
 .shopurr {
 	font-family: 'Miniver', cursive;
 	color: #D90619;
-	font-size: 3em;
+	font-size: 2em;
 	float: right;
 	margin-right: .6em;
 	padding-top: .25em;
@@ -125,7 +125,7 @@ that width, despite padding or borders being applied.*/
 
 .list-top h1 { 
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 700;
 	padding-top: .5em;
 	padding-bottom: .25em;
