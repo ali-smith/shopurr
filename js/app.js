@@ -1,28 +1,19 @@
 $(document).ready (function() {
 ///
 
-// $("input[type='text']").on('keyup',function(e) {
-//   	if(e.keyCode==13) {
-//   		var newItem = $(this).val();}
-//   		if (newItem.length > 0) {
-//   		 $('.listItems-unchecked').prepend('<li class="li-box-unchecked"><input type="checkbox"/>' + newItem + '</li>');
-//   		 $(this).val('');
-//   		}
-
-//   	else { //do nothing
-// 		} 	 	
-
-//   });
-
-//1/
 $("input[type='text']").on('keyup',function(e) {
   	if(e.keyCode==13) {
-  		var newItem = $(this).val(); 
+  		var newItem = $(this).val();}
+  		if (newItem.length > 0) {
   		 $('.listItems-unchecked').prepend('<li class="li-box-unchecked"><input type="checkbox"/>' + newItem + '</li>');
-  		 $(this).val('');	
+  		 $(this).val('');
+  		}
 
-  }		
+  	else { //do nothing
+		} 	 	
+
   });
+
 
 //2/
 $('.listItems-unchecked').on('change', "input[type='checkbox']", function() {
