@@ -2,13 +2,14 @@ $(document).ready (function() {
 ///
 
 // $("input[type='text']").on('keyup',function(e) {
-//   	if(e.keyCode==13 && newItem > 0) {
-//   		var newItem = $(this).val();
+//   	if(e.keyCode==13) {
+//   		var newItem = $(this).val();}
+//   		if (newItem.length > 0) {
 //   		 $('.listItems-unchecked').prepend('<li class="li-box-unchecked"><input type="checkbox"/>' + newItem + '</li>');
 //   		 $(this).val('');
 //   		}
 
-//   	else{ //do nothing
+//   	else { //do nothing
 // 		} 	 	
 
 //   });
