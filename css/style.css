@@ -114,6 +114,7 @@ that width, despite padding or borders being applied.*/
 	width: 450px;
 	min-height: 430px;
 	
+	
 }
 .list-bottom {
 	background: url("../images/paperBottom450x170trans.png");
@@ -123,19 +124,36 @@ that width, despite padding or borders being applied.*/
 	
 }
 
-.list-top h1 { 
-	text-align: center;
+.title {
+	width: 300px;
+	height: 30px;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+		
+}
+
+.title h1 { 
 	font-size: 1.5em;
 	font-weight: 700;
-	padding-top: .5em;
-	padding-bottom: .25em;
 }
 
-ul {
+button.scratchThat {
+	font-family: 'Miniver', cursive;
+	color: #D90619; 
+}
+
+ul>li {
 	font-size: 2em;
-	
+	margin: 0 auto;
+	height: 30px;
+	width: 300px;	
 }
 
+.li-box-checked {
+	height: 30px;
+	width: 300px;
+	color: #824338;
+}
 .addItem {
 	width: 300px;
 	height: 30px;
@@ -174,20 +192,6 @@ ul {
 }
 
 
-.li-box-unchecked {
-	height: 30px;
-	width: 300px;
-	margin: .5em auto 0;
-	/*border: 1px solid black;*/
-}
-
-.li-box-checked {
-	height: 30px;
-	width: 300px;
-	margin: .5em auto 0;
-	/*border: 1px solid #824338;*/
-	color: #824338;
-}
 
 input[type="checkbox"]:checked {
 	border: 1px solid #824338;
