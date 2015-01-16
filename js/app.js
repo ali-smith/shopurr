@@ -20,9 +20,11 @@ $('.savedListsH1').on('mouseenter', function () {
 	$('.savedLists').fadeIn('normal');
 });
 
-$('.savedListsH1').on ('mouseleave', function() {
+$('.savedLists').on ('mouseleave', function() {
 					$('.savedLists').fadeOut('normal');
 });
+//
+
 
 
 //

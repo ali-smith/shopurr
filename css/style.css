@@ -145,6 +145,10 @@ header {
 	cursor: default;
 }
 
+.savedLists>li:hover {
+	font-weight: 300;
+}
+
 /*list*/
 .list {
 	width: 450px;
