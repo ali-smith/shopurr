@@ -5,6 +5,7 @@ $("input[name='newList']").on('keyup',function(e) {
 	if(e.keyCode==13) {
 	var newListh1 = $.trim($(this).val());
 	if (newListh1.length > 0){
+		$('.newListName').empty();
 		$('.newListName').prepend(newListh1);
 		$(this).val('').blur();
 	}
@@ -13,6 +14,12 @@ else {
     }
   }
 });
+//
+
+$('.savedListsH1').on('mouseenter', function () {
+	$('.savedLists').show();
+});
+
 
 //
 $("input[name='addItem']").on('keyup',function(e) {

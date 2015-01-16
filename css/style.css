@@ -102,12 +102,6 @@ that width, despite padding or borders being applied.*/
 /*end logo*/
 /*sideMenu*/
 
-.listNames {
-	border: 1px solid black;
-	display: inline-block;
-	padding-top: 20px;
-}
-
 header {
 	border: 1px solid red;
 	display: inline-block;
@@ -115,10 +109,36 @@ header {
 
 .plus {
 	display: inline-block;
+	vertical-align: middle;
 }
 
-.savedLists {
+.newList {
+	vertical-align: middle;
+	height: 25px;
+	border: 1.5px solid #686868;
+}
+
+.newListDiv {
 	display: inline-block;
+	border: 1px solid black;
+	width: 250px;
+}
+
+.listNames {
+	width: 250px;
+	display: inline-block;
+	padding-top: 20px;
+	border: 1px solid black;
+}
+
+.listNames h1 {
+	font-size: 1.25em;
+	color: #D90619;
+	font-weight: 300;
+}
+
+.savedLists>li {
+	display: none;
 }
 
 /*list*/
@@ -145,19 +165,20 @@ header {
 
 .title {
 	width: 300px;
-	height: 60px;
+	min-height: 60px;
 	margin: 0 auto;
 	padding-top: 20px;
 	border: 1px solid orange;
 }
 .newListName { 
 	width: 200px;
-	height: 30px;
+	min-height: 30px;
 	margin: 0 auto;
 	font-size: 1.5em;
 	font-weight: 700;
 	display: inline-block;
 	border: 1px solid black;
+	word-wrap: break-word;
 }
 
 button.scratchIt {
@@ -167,16 +188,7 @@ button.scratchIt {
 	margin-left: 45px;
 }
 
-.addItem {
-	width: 300px;
-	height: 30px;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.5em;
-	color: #000000;
-	margin: 0 auto;
-	display: block;
-}
-
+/*webkit placeholder*/
 ::-webkit-input-placeholder {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #000000;
@@ -202,6 +214,16 @@ button.scratchIt {
 
 [placeholder]:focus::-webkit-input-placeholder {
   color: transparent;
+}
+
+.addItem {
+	width: 300px;
+	height: 30px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.5em;
+	color: #000000;
+	margin: 0 auto;
+	display: block;
 }
 
 .listItems li {
@@ -231,12 +253,9 @@ button.scratchIt {
 }
 
 
-/*input[type="checkbox"]:checked {
-	border: 1px solid #824338;
-	color: #824338;
-}*/
 
-/*end list*/
+
+
 
 
 
