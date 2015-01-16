@@ -21,7 +21,7 @@ $('.savedListsH1').on('mouseenter', function () {
 });
 
 $('.savedListsH1').on ('mouseleave', function() {
-					$('.savedLists').fadeOut('slow');
+					$('.savedLists').fadeOut('normal');
 });
 
 

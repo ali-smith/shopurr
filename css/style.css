@@ -115,6 +115,8 @@ header {
 .newList {
 	vertical-align: middle;
 	height: 25px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.25em;
 	border: 1.5px solid #686868;
 }
 
@@ -135,12 +137,12 @@ header {
 	font-size: 1.25em;
 	color: #D90619;
 	font-weight: 300;
-	cursor: pointer;
+	cursor: default;
 }
 
 .savedLists {
 	display: none;
-	cursor: pointer;
+	cursor: default;
 }
 
 /*list*/
@@ -193,25 +195,25 @@ button.scratchIt {
 /*webkit placeholder*/
 ::-webkit-input-placeholder {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #000000;
-  font-size: .8em;
+  color: #c1c1c1;
+  font-size: 1em;
   vertical-align: middle;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #000000;
-  font-size: .8em;
+  color: #c1c1c1;
+  font-size: 1em;
 }
 :-ms-input-placeholder {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #000000;
-  font-size: .8em;
+  color: #c1c1c1;
+  font-size: 1em;
 }
 :-moz-placeholder { /* Firefox 18- */
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #000000;
-  font-size: .8em;
+  color: #c1c1c1;
+  font-size: 1em;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -235,6 +237,7 @@ button.scratchIt {
 	height: 30px;
 	width: 300px;
 	border: 1px solid black;	
+	cursor: default;
 }
 
 .li-box-checked {
