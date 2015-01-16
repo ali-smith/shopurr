@@ -50,7 +50,7 @@ that width, despite padding or borders being applied.*/
 }
 /* end box-sizing: border-box; */
 
-
+/*border: 1px solid black;*/
 
 .container {
 	width: 800px;
@@ -71,6 +71,7 @@ that width, despite padding or borders being applied.*/
 
 /*grid*/
 [class*='col-'] {
+  display: inline-block;
   float: left;
 }
 
@@ -96,14 +97,32 @@ that width, despite padding or borders being applied.*/
 }
 
 #kittyCart {
-	/*border: 1px solid black;*/
 	float: right;	
 }
 /*end logo*/
+/*sideMenu*/
+
+.listNames {
+	border: 1px solid black;
+	display: inline-block;
+	padding-top: 20px;
+}
+
+header {
+	border: 1px solid red;
+	display: inline-block;
+}
+
+.plus {
+	display: inline-block;
+}
+
+.savedLists {
+	display: inline-block;
+}
 
 /*list*/
 .list {
-	float: left;
 	width: 450px;
 	box-shadow: -5px -6px 6px 1px #999999;
 }
@@ -126,34 +145,28 @@ that width, despite padding or borders being applied.*/
 
 .title {
 	width: 300px;
+	height: 60px;
+	margin: 0 auto;
+	padding-top: 20px;
+	border: 1px solid orange;
+}
+.newListName { 
+	width: 200px;
 	height: 30px;
 	margin: 0 auto;
-	/*border: 1px solid black;*/
-		
-}
-
-.title h1 { 
 	font-size: 1.5em;
 	font-weight: 700;
+	display: inline-block;
+	border: 1px solid black;
 }
 
-button.scratchThat {
-	font-family: 'Miniver', cursive;
-	color: #D90619; 
+button.scratchIt {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #D90619;
+	letter-spacing: .1em;
+	margin-left: 35px;
 }
 
-ul>li {
-	font-size: 2em;
-	margin: 0 auto;
-	height: 30px;
-	width: 300px;	
-}
-
-.li-box-checked {
-	height: 30px;
-	width: 300px;
-	color: #824338;
-}
 .addItem {
 	width: 300px;
 	height: 30px;
@@ -191,12 +204,37 @@ ul>li {
   color: transparent;
 }
 
+.listItems li {
+	font-size: 2em;
+	font-weight: 300;
+	margin: 0 auto;
+	height: 30px;
+	width: 300px;
+	border: 1px solid black;	
+}
 
-
-input[type="checkbox"]:checked {
-	border: 1px solid #824338;
+.li-box-checked {
 	color: #824338;
 }
+
+.box {
+	float:left;
+}
+
+.check {
+	float:left;
+	display: none;
+}
+
+.ex {
+	float: right;
+}
+
+
+/*input[type="checkbox"]:checked {
+	border: 1px solid #824338;
+	color: #824338;
+}*/
 
 /*end list*/
 

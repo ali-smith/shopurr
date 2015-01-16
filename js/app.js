@@ -1,12 +1,25 @@
 $(document).ready (function() {
 //
 
+$("input[name='newList']").on('keyup',function(e) {
+	if(e.keyCode==13) {
+	var newListh1 = $.trim($(this).val());
+	if (newListh1.length > 0){
+		$('.newListName').prepend(newListh1);
+		$(this).val('').blur();
+	}
+else {
+      //do nothing
+    }
+  }
+});
 
-$("input[type='text']").on('keyup',function(e) {
+//
+$("input[name='addItem']").on('keyup',function(e) {
   if(e.keyCode==13) {
       var newItem = $.trim($(this).val());
       if (newItem.length > 0){
-       $('.listItems-unchecked').prepend('<li class="li-box-unchecked"><input type="checkbox"/>' + newItem + '</li>');
+       $('.listItems-unchecked').hide().prepend('<li class="li-box-unchecked"><img src="images/box.png" class="box">' + newItem + '<img src="images/ex.png" class="ex"></li>').fadeIn('normal');
        $(this).val('');
       }
     else {
@@ -16,24 +29,38 @@ $("input[type='text']").on('keyup',function(e) {
 });
 
 //2
-$('.listItems-unchecked').on('change', "input[type='checkbox']", function() {
-		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').prependTo('.listItems-checked');
-			
+$('.listItems-unchecked').on('click', 'img', function() {
+		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').hide().prependTo('.listItems-checked').fadeIn('normal');
+
+		 if($(this).attr('src','images/box.png')) {
+		 	$(this).attr('src', 'images/check.png');
+		 } 			
 });
 
 //3
-$('.listItems-checked').on('change', "input[type='checkbox']", function() {
-		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').appendTo('.listItems-unchecked');
+$('.listItems-checked').on('click', 'img', function() {
+		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').hide().appendTo('.listItems-unchecked').fadeIn('normal');
+		
+		if($(this).attr('src','images/check.png')) {
+		 	$(this).attr('src', 'images/box.png');
+		 }
 });
+
 //4
+$(document).on('click', '.ex', function() {
+				$(this).closest('li').remove();
+			
+			
+});
+
+//5
+$(document).on('click', '.scratchIt', function(){
+    $('.listItems-unchecked').empty();
+    $('.listItems-checked').empty();
+});
+
+
 });//document ready/
 
 
-// $("input[type='text']").on('keyup',function(e) {
-//   	if(e.keyCode==13) {
-//   		var newItem = $(this).val(); 
-//   		 $('.listItems-unchecked').prepend('<li class="li-box-unchecked"><input type="checkbox"/>' + newItem + '</li>');
-//   		 $(this).val('');	
 
-//   }		
-//   });
