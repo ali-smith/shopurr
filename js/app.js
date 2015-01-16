@@ -16,11 +16,11 @@ else {
 });
 //
 
-$('.savedListsH1').on('mouseenter', function () {
+$('.listNames').on('mouseenter', function () {
 	$('.savedLists').fadeIn('normal');
 });
 
-$('.savedLists').on ('mouseleave', function() {
+$('.listNames').on ('mouseleave', function() {
 					$('.savedLists').fadeOut('normal');
 });
 //
