@@ -135,10 +135,12 @@ header {
 	font-size: 1.25em;
 	color: #D90619;
 	font-weight: 300;
+	cursor: pointer;
 }
 
-.savedLists>li {
+.savedLists {
 	display: none;
+	cursor: pointer;
 }
 
 /*list*/

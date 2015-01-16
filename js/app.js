@@ -17,7 +17,11 @@ else {
 //
 
 $('.savedListsH1').on('mouseenter', function () {
-	$('.savedLists').show();
+	$('.savedLists').fadeIn('normal');
+});
+
+$('.savedListsH1').on ('mouseleave', function() {
+					$('.savedLists').fadeOut('slow');
 });
 
 
