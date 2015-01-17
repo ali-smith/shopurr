@@ -233,7 +233,7 @@ button.scratchIt {
 .listItems li {
 	font-size: 2em;
 	font-weight: 300;
-	margin: 1px auto;
+	margin: 5px auto;
 	height: 30px;
 	width: 300px;	
 	cursor: default;
@@ -245,17 +245,20 @@ button.scratchIt {
 
 #box {
 	float:left;
-	margin: 5px 10px 0 0;
+	margin: 6px 15px 0 0;
+	cursor: pointer;
 }
 
 #check {
 	float:left;
 	display: none;
+	cursor: pointer;
 }
 
 #ex {
 	float: right;
 	margin: 8px 0 0;
+	cursor: pointer;
 }
 
 
