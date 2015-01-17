@@ -1,6 +1,6 @@
 $(document).ready (function() {
-//
 
+/*adds new item to list dynamically*/
 $("input[name='newList']").on('keyup',function(e) {
 	if(e.keyCode==13) {
 	var newListh1 = $.trim($(this).val());
@@ -14,20 +14,18 @@ else {
     }
   }
 });
-//
 
+/*shows saved lists on hover*/
 $('.listNames').on('mouseenter', function () {
 	$('.savedLists').fadeIn('normal');
 });
 
+/*hides saved lists on mouseleave*/
 $('.listNames').on ('mouseleave', function() {
 					$('.savedLists').fadeOut('normal');
 });
-//
 
-
-
-//
+/*adds new list item (with one or more character) on 'enter'*/
 $("input[name='addItem']").on('keyup',function(e) {
   if(e.keyCode==13) {
       var newItem = $.trim($(this).val());
@@ -41,7 +39,7 @@ $("input[name='addItem']").on('keyup',function(e) {
   }
 });
 
-//2
+/*changes empty checkbox to checkmark and changes color*/
 $('.listItems-unchecked').on('click', 'img', function() {
 		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').hide().prependTo('.listItems-checked').fadeIn('normal');
 
@@ -50,7 +48,7 @@ $('.listItems-unchecked').on('click', 'img', function() {
 		 } 			
 });
 
-//3
+/*changes checkmark to checkbox and changes color back*/
 $('.listItems-checked').on('click', 'img', function() {
 		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').hide().appendTo('.listItems-unchecked').fadeIn('normal');
 		
@@ -59,14 +57,12 @@ $('.listItems-checked').on('click', 'img', function() {
 		 }
 });
 
-//4
+/*deletes item from list*/
 $(document).on('click', '#ex', function() {
-				$(this).closest('li').remove();
-			
-			
+				$(this).closest('li').remove();			
 });
 
-//5
+/*deletes all items from list*/
 $(document).on('click', '.scratchIt', function(){
     $('.listItems-unchecked').empty();
     $('.listItems-checked').empty();

@@ -50,8 +50,6 @@ that width, despite padding or borders being applied.*/
 }
 /* end box-sizing: border-box; */
 
-/*border: 1px solid black;*/
-
 .container {
 	width: 800px;
 	padding-top: 50px;
@@ -59,7 +57,6 @@ that width, despite padding or borders being applied.*/
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #ffffff;
-	/*border: 2px solid green;*/
 	box-shadow: 0px 0px 30px 5px #c3bcb5;
 }
 
@@ -98,8 +95,8 @@ that width, despite padding or borders being applied.*/
 	float: right;	
 }
 /*end logo*/
-/*sideMenu*/
 
+/*sideMenu*/
 header {
 	display: inline-block;
 }
@@ -144,8 +141,9 @@ header {
 .savedLists>li:hover {
 	font-weight: 300;
 }
+/*end sideMenu*/
 
-/*list*/
+/*dynamic list*/
 .list {
 	width: 450px;
 	box-shadow: -5px -6px 6px 1px #999999;
@@ -155,16 +153,14 @@ header {
 	background: url("../images/paperTop450x430trans.png");
 	background-repeat: repeat;
 	width: 450px;
-	min-height: 430px;
-	
-	
+	min-height: 450px;
 }
+
 .list-bottom {
 	background: url("../images/paperBottom450x170trans.png");
 	background-repeat: no-repeat;
 	width: 450px;
 	height: 170px;
-	
 }
 
 .title {
@@ -233,8 +229,8 @@ button.scratchIt {
 .listItems li {
 	font-size: 2em;
 	font-weight: 300;
-	margin: 5px auto;
-	height: 30px;
+	margin: 0 auto;
+	height: 40px;
 	width: 300px;	
 	cursor: default;
 }
@@ -261,7 +257,7 @@ button.scratchIt {
 	cursor: pointer;
 }
 
-
+/*end dynamic list*/
 
 
 
