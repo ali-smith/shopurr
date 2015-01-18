@@ -8,7 +8,7 @@ $("input[name='newList']").on('keyup',function(e) {
 		$('.newListName').empty();
 		$('.listItems-unchecked').empty();
     	$('.listItems-checked').empty();
-		$('.newListName').prepend(newListh1 + '<span class="scratchList">scratch list</span');
+		$('.newListName').prepend(newListh1 + '<span class="scratchList"><p>scratch list</p></span');
 		$('.newListHidden').fadeIn('normal');
 		$(this).val('').blur();
 	}
