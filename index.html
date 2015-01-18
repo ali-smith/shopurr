@@ -34,16 +34,45 @@
 <body>
 <div class="container">
 
-<div class="col-1-3">
+<div class="topRow">
 <header>
-	<h1 class="shopurr">shopurr</h1>
-	<img src="images/shopurrKitty200x185.png" id="kittyCart" alt="">
-	<div class="newListDiv">
+	<div class="logo">
+		<h1 class="shopurr">shopurr</h1>
+		<img src="images/shopurrKitty200x185.png" id="kittyCart" alt="">
+	</div>
+		
+	
+</header><!-- /header -->	
+	
+
+</div><!--topRow-->
+
+
+	<div class="list">
+
+
+		<div class="newListDiv">
 		<img src="images/plus.png" class="plus" alt="">
-		<input type="text" name="newList" class="newList" placeholder="new list">	
+		<input type="text" name="newList" class="newList" placeholder="mew list">	
 	</div>
 
-	<div class="listNames">
+	
+			
+		<div class="newListHidden">
+		<h1 class="newListName"></h1>
+
+		<input type="text" name="addItem" placeholder="mew item" class="addItem" autofocus="autofocus">
+			
+			<div class="listItems">
+			<span class="scratchItems">scratch items</span>
+				<ul class="listItems-unchecked"></ul>
+				<ul class="listItems-checked"></ul>
+			</div>
+
+		</div><!--/newListHidden-->
+	</div><!--/list-->
+
+<!-- 	<div class="listNames">
 		<h1 class="savedListsH1">saved lists</h1>
 			
 			<ul class="savedLists">
@@ -52,31 +81,8 @@
 				<li>Nip Shop</li>
 			</ul>
 		
-	</div><!--listNames-->
-</header><!-- /header -->
-</div><!--col-1-3-->
+	</div><!--/listNames-->
 
-<div class="col-2-3">
-	<div class="list">
-		<div class="list-top">
-			<div class="title">
-		
-				<h1 class="newListName"></h1>
-				<button type="button" class="scratchIt">scratch</button>
-		
-			</div>	
-		<input type="text" name="addItem" placeholder="add item" class="addItem">
-			
-			<div class="listItems">
-				<ul class="listItems-unchecked"></ul>
-				<ul class="listItems-checked"></ul>
-			</div>
-	</div>
-	
-		<div class="list-bottom">
-		</div>
-	</div><!--/list-->
-</div><!--col-2-3-->
 
 </div><!--/container-->	
 

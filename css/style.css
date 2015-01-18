@@ -29,10 +29,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    background-color: #eae2d7;
+    background-color: white;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    letter-spacing: .05em;
     font-weight: 100;
+    font-size: 24px;
 }
 ol, ul {
     list-style: none;
@@ -50,84 +50,60 @@ that width, despite padding or borders being applied.*/
 }
 /* end box-sizing: border-box; */
 
-.container {
-	width: 800px;
-	padding-top: 50px;
-	padding-bottom:100px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #ffffff;
-	box-shadow: 0px 0px 30px 5px #c3bcb5;
+/*input placeholder style*/
+input[type=text] {
+	border:	none;
+	font-size: 24px;
 }
 
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+/*end input placeholder syle*/
 
-/*grid*/
-[class*='col-'] {
-  display: inline-block;
-  float: left;
+.topRow {
+	width: 100%;
+	background-color: white;
+	text-align: center;
 }
-
-.col-1-3 {
-	width: 33.33%; 	
-}
-
-.col-2-3 {
-	width: 66.66%;
-}
-/*end grid*/
 
 /*logo*/
 .shopurr {
 	font-family: 'Miniver', cursive;
 	color: #D90619;
-	font-size: 2em;
-	float: right;
-	margin-right: .6em;
-	padding-top: .25em;
+	font-size: 36px;
 }
 
-#kittyCart {
-	float: right;	
+#kittyCart {	
 }
 /*end logo*/
 
-/*sideMenu*/
-header {
-	display: inline-block;
+
+.logo {
+	padding: 20px 0;
 }
 
 .plus {
-	display: inline-block;
 	vertical-align: middle;
-	margin: 5px 0 0 95px;
+	margin-right: 5px;
+}
+
+.newListHidden {
+	display: none;
 }
 
 .newList {
 	vertical-align: middle;
-	height: 25px;
-	float: right;
+	height: 30px;
+	width: 300px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.25em;
-	border: 1.5px solid #686868;
+	margin-right: 25px;
 }
 
 .newListDiv {
-	display: inline-block;
-	width: 250px;
-}
-
-.listNames {
-	display: inline-block;
-	margin: 10px 0 0 110px; 
+	text-align: center;
+	padding: 20px 0; 
+	height: 60px;
 }
 
 .listNames h1 {
-	font-size: 1.25em;
 	color: #D90619;
 	font-weight: 300;
 	cursor: default;
@@ -141,120 +117,132 @@ header {
 .savedLists>li:hover {
 	font-weight: 300;
 }
-/*end sideMenu*/
 
 /*dynamic list*/
 .list {
-	width: 450px;
-	box-shadow: -5px -6px 6px 1px #999999;
-}
-
-.list-top {
+	box-shadow: 0px 0px 10px 6px #999999;
 	background: url("../images/paperTop450x430trans.png");
 	background-repeat: repeat;
-	width: 450px;
 	min-height: 450px;
+	text-align: center;
 }
 
-.list-bottom {
-	background: url("../images/paperBottom450x170trans.png");
-	background-repeat: no-repeat;
-	width: 450px;
-	height: 170px;
-}
-
-.title {
+.newListName {
 	width: 300px;
-	min-height: 60px;
+	height: 60px;
+	/*padding-top: 30px 0 0 3px;
+	padding-left: 3px;*/
 	margin: 0 auto;
-	padding-top: 20px;
-}
-
-.newListName { 
-	width: 200px;
-	min-height: 30px;
-	margin: 0 auto;
-	font-size: 1.5em;
-	font-weight: 700;
-	display: inline-block;
+	text-align: left;
+	font-weight: 500;
 	word-wrap: break-word;
-	cursor: default;
 }
 
-button.scratchIt {
+h1.newListName {
+	font-size: 30px;
+	padding: 30px 0 35px 3px;
+	width: 300px;
+	cursor: pointer;
+}
+
+.scratchList {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 16px;
 	color: #D90619;
-	letter-spacing: .1em;
-	margin-left: 45px;
+	margin: 11px 0 0 0;
+	cursor: pointer;
+	float: right;
+	/*display: none; */
 }
 
-/*webkit placeholder*/
-::-webkit-input-placeholder {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #c1c1c1;
-  font-size: 1em;
-  vertical-align: middle;
+.scratchList:hover {
+	color: black;
 }
 
-::-moz-placeholder { /* Firefox 19+ */
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #c1c1c1;
-  font-size: 1em;
-}
-:-ms-input-placeholder {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #c1c1c1;
-  font-size: 1em;
-}
-:-moz-placeholder { /* Firefox 18- */
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: #c1c1c1;
-  font-size: 1em;
+.scratchItems {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 16px;
+	color: #D90619;
+	font-weight: 400;
+	text-align: right;
+	width: 300px;
+	margin:30px auto 10px auto;
+	cursor: pointer;
+	display: block;
 }
 
-[placeholder]:focus::-webkit-input-placeholder {
-  color: transparent;
+.scratchItems:hover {
+	color: black;
 }
 
 .addItem {
 	width: 300px;
 	height: 30px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.5em;
 	color: #000000;
-	margin: 0 auto;
-	display: block;
 }
 
 .listItems li {
-	font-size: 2em;
 	font-weight: 300;
 	margin: 0 auto;
 	height: 40px;
 	width: 300px;	
 	cursor: default;
+	vertical-align: text-bottom;
+	text-align: left;
 }
 
 .li-box-checked {
 	color: #824338;
 }
 
-#box {
-	float:left;
-	margin: 6px 15px 0 0;
-	cursor: pointer;
+.li-box-unchecked {
+
 }
 
-#check {
+.box {
+	float:left;
+	cursor: pointer;
+	margin-right: 10px;
+	height: 25px;
+	width: 24px;
+	display: block;
+	background: url("../images/box.png"); 
+	background-repeat: no-repeat;
+}
+
+.box:hover {
+	background: url("../images/boxBrown.png");
+}
+
+.check {
 	float:left;
 	display: none;
 	cursor: pointer;
+	height: 25px;
+	width: 22px;
+	margin-right: 10px;
+	display: block;
+	background: url("../images/check.png");
+	background-repeat: no-repeat;
 }
 
-#ex {
+.check:hover {
+	background: url("../images/checkGray.png");
+}
+
+.ex {
 	float: right;
-	margin: 8px 0 0;
 	cursor: pointer;
+	height: 25px;
+	width: 22px;
+	display: block;
+	background: url("../images/ex.png");
+	background-repeat: no-repeat;
+}
+
+.ex:hover {
+	background: url("../images/exBlack.png");	
 }
 
 /*end dynamic list*/

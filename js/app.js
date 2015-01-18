@@ -1,12 +1,15 @@
 $(document).ready (function() {
 
-/*adds new item to list dynamically*/
+/*adds new list name dynamically*/
 $("input[name='newList']").on('keyup',function(e) {
 	if(e.keyCode==13) {
 	var newListh1 = $.trim($(this).val());
 	if (newListh1.length > 0){
 		$('.newListName').empty();
-		$('.newListName').prepend(newListh1);
+		$('.listItems-unchecked').empty();
+    	$('.listItems-checked').empty();
+		$('.newListName').prepend(newListh1 + '<span class="scratchList">scratch list</span');
+		$('.newListHidden').fadeIn('normal');
 		$(this).val('').blur();
 	}
 else {
@@ -14,6 +17,24 @@ else {
     }
   }
 });
+
+/*deletes new list including new list name*/
+$('.newListName').on('mouseenter', function() {
+	$(this).children().show();
+});
+
+$('.newListName').on('mouseenter', function() {
+	$(this).children().show();
+});
+
+$('.newListName').on('click', '.scratchList', function () {
+	$(this).remove();
+	$('.listItems-unchecked').empty();
+    $('.listItems-checked').empty();
+    $('.newListHidden').hide();
+
+});
+
 
 /*shows saved lists on hover*/
 $('.listNames').on('mouseenter', function () {
@@ -30,7 +51,7 @@ $("input[name='addItem']").on('keyup',function(e) {
   if(e.keyCode==13) {
       var newItem = $.trim($(this).val());
       if (newItem.length > 0){
-       $('.listItems-unchecked').hide().prepend('<li class="li-box-unchecked"><img src="images/box.png" id="box">' + newItem + '<img src="images/ex.png" id="ex"></li>').fadeIn('normal');
+       $('.listItems-unchecked').hide().prepend('<li class="li-box-unchecked"><span class="box"></span>' + newItem + '<span class="ex"></span></li>').fadeIn('normal');
        $(this).val('');
       }
     else {
@@ -40,30 +61,24 @@ $("input[name='addItem']").on('keyup',function(e) {
 });
 
 /*changes empty checkbox to checkmark and changes color*/
-$('.listItems-unchecked').on('click', 'img', function() {
-		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').hide().prependTo('.listItems-checked').fadeIn('normal');
-
-		 if($(this).attr('src','images/box.png')) {
-		 	$(this).attr('src', 'images/check.png');
-		 } 			
+$('.listItems-unchecked').on('click', '.box', function() {
+		$(this).parent().removeClass('li-box-unchecked').addClass('li-box-checked').hide().prependTo('.listItems-checked').fadeIn('normal');
+		$(this).removeClass('box').addClass('check');		 
 });
 
 /*changes checkmark to checkbox and changes color back*/
-$('.listItems-checked').on('click', 'img', function() {
-		$(this).parent().toggleClass('li-box-checked','li-box-unchecked').hide().appendTo('.listItems-unchecked').fadeIn('normal');
-		
-		if($(this).attr('src','images/check.png')) {
-		 	$(this).attr('src', 'images/box.png');
-		 }
+$('.listItems-checked').on('click', '.check', function() {
+		$(this).parent().removeClass('li-box-checked').addClass('li-box-unchecked').hide().appendTo('.listItems-unchecked').fadeIn('normal');
+		$(this).removeClass('check').addClass('box');
 });
 
 /*deletes item from list*/
-$(document).on('click', '#ex', function() {
+$(document).on('click', '.ex', function() {
 				$(this).closest('li').remove();			
 });
 
 /*deletes all items from list*/
-$(document).on('click', '.scratchIt', function(){
+$(document).on('click', '.scratchItems', function(){
     $('.listItems-unchecked').empty();
     $('.listItems-checked').empty();
 });
