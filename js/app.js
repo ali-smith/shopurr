@@ -19,31 +19,12 @@ else {
 });
 
 /*deletes new list including new list name*/
-$('.newListName').on('mouseenter', function() {
-	$(this).children().show();
-});
-
-$('.newListName').on('mouseenter', function() {
-	$(this).children().show();
-});
-
 $('.newListName').on('click', '.scratchList', function () {
 	$(this).remove();
 	$('.listItems-unchecked').empty();
     $('.listItems-checked').empty();
     $('.newListHidden').hide();
 
-});
-
-
-/*shows saved lists on hover*/
-$('.listNames').on('mouseenter', function () {
-	$('.savedLists').fadeIn('normal');
-});
-
-/*hides saved lists on mouseleave*/
-$('.listNames').on ('mouseleave', function() {
-					$('.savedLists').fadeOut('normal');
 });
 
 /*adds new list item (with one or more character) on 'enter'*/
@@ -74,7 +55,7 @@ $('.listItems-checked').on('click', '.check', function() {
 
 /*deletes item from list*/
 $(document).on('click', '.ex', function() {
-				$(this).closest('li').remove();			
+				$(this).closest('li').fadeOut('normal');			
 });
 
 /*deletes all items from list*/
@@ -87,4 +68,22 @@ $(document).on('click', '.scratchItems', function(){
 });//document ready/
 
 
+// /*for future use*/
+// /*shows saved lists on hover*/
+// $('.listNames').on('mouseenter', function () {
+// 	$('.savedLists').fadeIn('normal');
+// });
+
+// /*hides saved lists on mouseleave*/
+// $('.listNames').on ('mouseleave', function() {
+// 					$('.savedLists').fadeOut('normal');
+// });
+
+// $('.newListName').on('mouseenter', function() {
+// 	$(this).children().show();
+// });
+
+// $('.newListName').on('mouseenter', function() {
+// 	$(this).children().show();
+// });
 
