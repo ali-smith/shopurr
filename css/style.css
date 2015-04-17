@@ -24,7 +24,7 @@ h1.shopurr {
 	background-color: white;
 	height: 45px;
 	width: 125px;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin: 10px 0 0 0px;
 	left: 50%;
 	position: absolute;
@@ -79,9 +79,7 @@ input#newListInput[placeholder]:focus::-webkit-input-placeholder {
 	text-align: center;
 	overflow: hidden;
 	width: 370px;
-	left: 50%;
-	margin: 0 0 0 -175px;
-	position: absolute;
+	margin-top: 0px;
 	cursor: default;	
 }
 
@@ -163,6 +161,7 @@ input#newItem[type=text] {
 .listItems p {
 	display: inline;
 	width: 200px;
+	cursor: default;
 }
 
 .fa-square-o, .fa-check-square-o {
