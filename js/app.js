@@ -68,6 +68,15 @@ $('.scratchList').on('click', function(event) {
 	$('#newListInput').delay(500).fadeIn();
 });
 
+//logo click starts over
+$('.shopurr').on('click', function(event) {
+	event.preventDefault();
+	$('.listNameWrapper').fadeOut();
+	$('.listWrapper').fadeOut();
+	$('.listItems').empty();
+	$('#newListInput').delay(500).fadeIn();
+});
+
 //removes all list items
 $('.listWrapper').on('click', '.scratchItems', function(event) {
 	event.preventDefault();
