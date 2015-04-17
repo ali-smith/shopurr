@@ -3,83 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>shopurr</title>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Miniver' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,300,400,200' rel='stylesheet' type='text/css'>
 
-	
-<!--favicons-->
-<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/avicon-32x32.png" sizes="32x32">
+	<!--favicons-->
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/avicon-32x32.png" sizes="32x32">
 
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="mstile-144x144.png">
-<!--/favicons-->
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png">
+	<!--/favicons-->
 
 </head>
 
 <body>
-
-
-<div class="topRow">
 	<header>
-		<div class="logo">
-			<h1 class="shopurr">shopurr</h1>
-			<img src="images/shopurrKitty200x185.png" id="kittyCart" alt="">
-		</div>
+		<h1 class="shopurr">shopurr</h1>
+		<div class="kitty"></div>
+		<div class="logoBackground"></div>
+	</header>
+	<div class="newListWrapper">
+		<input type="text" id="newListInput" placeholder="mew list name" maxlength="15">
+		<div class="listNameWrapper">
+		<div class="scratchList"><p>scratch<br/>list</p></div>
+		<p class="listName"></p>
 		
-	
-	</header>	
-	
-
-</div><!--topRow-->
-
-
-<div class="list">
-	<div class="newListDiv">
-		<img src="images/plus.png" class="plus" alt="">
-		<input type="text" name="newList" class="newList" placeholder="mew list">	
+		</div>
 	</div>
-		<div class="newListHidden">
-			<h1 class="newListName"></h1>
-			<input type="text" name="addItem" placeholder="mew item" class="addItem" autofocus="autofocus">
-			
-			<div class="listItems">
-				<span class="scratchItems"><p>scratch items</p></span>
-					<ul class="listItems-unchecked"></ul>
-					<ul class="listItems-checked"></ul>
-			</div>
-
-		</div><!--/newListHidden-->
-</div><!--/list-->
+	<div class="listWrapper">
+		<div class="scratchItems"><p>scratch<br/>items</p></div>
+		<input type="text" id="newItem" placeholder="mew list item" maxlength="20" autofocus>
+		<ul class="listItems">
+			<!-- list items -->
+		</ul>
+	</div>
 
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
 
 
-<!-- <div class="listNames">
-		<h1 class="savedListsH1">saved lists</h1>
-			
-			<ul class="savedLists">
-				<li>Yarn Etc</li>
-				<li>Jingly Stuff Warehouse</li>
-				<li>Nip Shop</li>
-			</ul>
-		
-	</div> --><!--listNames-->
+
