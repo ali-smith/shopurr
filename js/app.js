@@ -1,7 +1,7 @@
 $(document).ready (function() {
 
 //adds new list name dynamically
-$("input[id='newListInput']").on('keypress',function(e) {
+$("input[id='newListInput']").on('keyup',function(e) {
 	event.preventDefault();
 	if(e.keyCode==13) {
 	var listName = $.trim($(this).val());
@@ -22,7 +22,7 @@ else {
 });
 
 //adds new list item (with one or more character) on 'enter'
-$("input[id='newItem']").on('keypress',function(e) {
+$("input[id='newItem']").on('keyup',function(e) {
 	event.preventDefault();
   if(e.keyCode==13) {
       var newItem = $.trim($(this).val());
