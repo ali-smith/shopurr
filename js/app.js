@@ -2,7 +2,6 @@ $(document).ready (function() {
 
 //adds new list name dynamically
 $("input[id='newListInput']").on('keypress',function(e) {
-	event.preventDefault();
 	if(e.keyCode==13) {
 	var listName = $.trim($(this).val());
 	if (listName.length > 0){
@@ -23,7 +22,6 @@ else {
 
 //adds new list item (with one or more character) on 'enter'
 $("input[id='newItem']").on('keypress',function(e) {
-	event.preventDefault();
   if(e.keyCode==13) {
       var newItem = $.trim($(this).val());
       if (newItem.length > 0){
@@ -39,7 +37,6 @@ $("input[id='newItem']").on('keypress',function(e) {
 
 // checked items move to bottom of list
 $('.listItems').on('click', '.fa-square-o', function(event) {
-	event.preventDefault();
 	$(this).hide();
 	$(this).siblings('.fa-check-square-o').show();
 	$(this).parent().addClass('gray');
@@ -48,7 +45,6 @@ $('.listItems').on('click', '.fa-square-o', function(event) {
 
 //unchecked items move to top of list
 $('.listItems').on('click', '.fa-check-square-o', function(event) {
-	event.preventDefault();
 	$(this).hide();
 	$(this).siblings('.fa-square-o').show();
 	$(this).parent().removeClass('gray');
@@ -57,13 +53,11 @@ $('.listItems').on('click', '.fa-check-square-o', function(event) {
 
 //removes item from list
 $('.listItems').on('click', '.fa-times', function(event) {
-	event.preventDefault();
 	$(this).parent().fadeOut();
 });
 
 //removes entire list
 $('.scratchList').on('click', function(event) {
-	event.preventDefault();
 	$(this).parent().fadeOut();
 	$('.listWrapper').fadeOut();
 	$('.listItems').empty();
@@ -72,7 +66,6 @@ $('.scratchList').on('click', function(event) {
 
 //logo click starts over
 $('.shopurr').on('click', function(event) {
-	event.preventDefault();
 	$('.listNameWrapper').fadeOut();
 	$('.listWrapper').fadeOut();
 	$('.listItems').empty();
@@ -81,7 +74,6 @@ $('.shopurr').on('click', function(event) {
 
 //removes all list items
 $('.listWrapper').on('click', '.scratchItems', function(event) {
-	event.preventDefault();
 	$('.listItems').empty();
 	$(this).fadeOut(500);
 	$('#newItem').focus();
